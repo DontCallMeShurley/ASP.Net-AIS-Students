@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div>
+        <h3>Наши контакты</h3>
+        
+        <table>
+          
+            <tr>
+                @foreach (var b in ViewBag.Contacts)
+                {
+                <tr>
+                    <td><p><b>Адрес</b> @b.Address</p></td>
+                    <td><p><b>Телефон</b> @b.Nubmer</p></td>
+                    
+                </tr>
+               }
+                </tr>
+                
+            </table>
+      
+    </div>
